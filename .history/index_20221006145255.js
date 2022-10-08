@@ -1,1 +1,0 @@
-const members = document.querySelectorAll('.')
