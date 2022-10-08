@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body #fullheight {
+    min-height: 100% !important; 
+    height: 100%;
+    font-family: Arial, Helveticam sans-serif;
+    background-color:black;
+}
+.container {
+    height: 100%;
+    background-color:black;
+
+}
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 39%;
+    color:rgb(175, 206, 233);
+}
+.result span {
+    margin-right: 60px;
+    font-size: 150px;
+    justify-self: flex-end;
+}
+.buttons {
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: rgb(44, 160, 33);
+    border-radius: 100%;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.percent {
+    background-color: rgb(90, 80, 80);
+    border: none;
+}
+.item1 {
+    background-color:rgb(202, 173, 230);
+    border: none;
+}
+.item3 {
+    background-color: rgb(202, 173, 230);
+    border: none;
+}
+.numbers, .comma {
+    background-color: #343434;
+    border: none;
+}
+.negative .clear {
+    color: black;
+}
+.itemZero {
+    background-color: #343434;
+    width: 3.5em;
+    border-radius: 135px;
+    grid-column: span 2;
+    border: none;
+}
