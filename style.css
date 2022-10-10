@@ -88,6 +88,6 @@ html, body #fullheight {
 }
 @media (min-width: 1334px) {
     .item {
-        width: 0%;
+        width: 60%;
     }
 }

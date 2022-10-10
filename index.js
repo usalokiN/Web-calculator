@@ -3,7 +3,7 @@ const result = document.querySelector('.result span');
 const percent = document.querySelector('.percent');
 const comma = document.querySelector('.comma');
 const signs = document.querySelectorAll('.sign');
-const equals = document.querySelector('.equals   ');
+const equals = document.querySelector('.equals');
 const clear = document.querySelector('.clear');
 const negative = document.querySelector('.negative');
 
@@ -17,12 +17,12 @@ let firstValue = '',
 
 
 for (let i = 0; i <numbers.length; i++ ) {
-    numbers[i].addEventListener('click', (e)=> {
+    numbers[i].addEventListener('click', (e) => {
         let atr = e.target.getAttribute('value');
         if (isFirstValue === false) {
             getFirstValue(atr);
         }
-        if (isSecondValue === false) {
+        if (isSecondValue == false) {
             getSecondValue(atr);
         }
     });
@@ -37,16 +37,16 @@ for (let i = 0; i <numbers.length; i++ ) {
 
     }
 
-    function getSecondValue (e) {
+    function getSecondValue (el) {
         if(firstValue != "" && sign != ""){
-        secondValue += e;
+        secondValue += el;
         result.innerHTML = secondValue;
         secondValue = +secondValue; 
     }
-}
+} 
 
 function getSign () {
-    for (let i = 0; i < sign.length; i++) {
+    for (let i = 0; i < signs.length; i++) {
         signs[i].addEventListener('click', (event) => {
             sign = event.target.getAttribute('value');
             isFirstValue = true;    
@@ -67,7 +67,7 @@ equals.addEventListener('click', () => {
     result.innerHTML = resultValue;
     firstValue = resultValue;
     secondValue = '';
-
+    
     checkResultLength();
 });
 
