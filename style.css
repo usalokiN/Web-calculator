@@ -32,6 +32,12 @@ html, body #fullheight {
     background-color: black;
     display: grid;
     grid-template-columns: 21% 21% 21% 21%;
+    transition: 0.3s all;
+
+}
+.buttons:hover {
+    transition: 0.3s all;
+
 }
 .item {
     display: flex;
@@ -47,6 +53,13 @@ html, body #fullheight {
     align-self: center;
     justify-content: center;
     opacity: 0.9;
+    transition: 0.3s all;
+}
+.item:hover {
+    -webkit-box-shadow: 1px 5px 23px 9px #83c5eb; 
+    box-shadow: 1px 5px 23px 9px #83c5eb;
+    transition: 0.3s all;
+
 }
 .percent {
     background-color: rgb(128, 117, 117);
